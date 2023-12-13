@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+ <style>
+        /* Add a colorful background gradient */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ff0080, #8000ff);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Rest of your CSS styles here... */
+   </style> 
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div class="container" style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); width: 300px; text-align: center;">
+        <form id="login-form">
+            <h1 style="margin-top: 0; color: #007bff;">Login</h1>
+            <div class="input-group" style="margin: 10px 0; text-align: left;">
+                <label for="username" style="display: block; font-weight: bold; color: #333;">Username:</label>
+                <input type="text" id="username" name="username" required style="width: 100%; padding: 8px; margin-top: 4px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;">
+            </div>
+            <div class="input-group" style="margin: 10px 0; text-align: left;">
+                <label for="password" style="display: block; font-weight: bold; color: #333;">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 8px; margin-top: 4px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px;">
+                <button type="button" id="toggle-password" style="background-color: #ccc; color: #333; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Show Password</button>
+            </div>
+            <div class="input-group" style="margin: 10px 0;">
+                <input type="checkbox" id="remember-me" name="remember-me" style="margin-right: 5px;">
+                <label for="remember-me" style="color: #333;">Remember Me</label>
+            </div>
+            <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 3px; cursor: pointer;">Login</button>
+            <div id="error-message" class="error-message" style="color: red; margin-top: 10px;"></div>
+            <p style="margin: 10px 0;">
+                Don't have an account? <a href="#" style="text-decoration: none; color: #007bff;">Register</a>
+            </p>
+            <p><a href="#" style="text-decoration: none; color: #007bff;">Forgot Password?</a></p>
+            <p style="margin: 10px 0; font-size: 14px;">
+                Or log in with:
+            </p>
+            <button id="google-login" class="social-login" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Google</button>
+            <button id="facebook-login" class="social-login" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Facebook</button>
+        </form>
+    </div>
+
+    <!-- ... (rest of the HTML code) ... -->
+
+</body>
+</html>
+
