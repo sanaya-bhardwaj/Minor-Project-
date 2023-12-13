@@ -85,6 +85,11 @@ class AVLTree {
         root = null;
     }
 
+    // Get the root of the AVL tree
+    public AVLNode getRoot() {
+        return root;
+    }
+
     // Get the height of a node (null-safe)
     private int getHeight(AVLNode node) {
         if (node == null) {
@@ -212,7 +217,6 @@ class AVLTree {
     }
 }
 
-
 public class TreeComparison {
     public static void main(String[] args) {
         int n = 1000; // Number of elements in the data sets
@@ -221,18 +225,30 @@ public class TreeComparison {
         // Compare Binary Tree
         BinaryTree binaryTree = createBinaryTree(userArray);
         long binaryTreeSearchTime = measureSearchTime(binaryTree, userArray);
+        int binaryTreeHeight = getHeight(binaryTree);
 
         // Compare Binary Search Tree
         BinaryTree binarySearchTree = createBinarySearchTree(userArray);
         long binarySearchTreeSearchTime = measureSearchTime(binarySearchTree, userArray);
+        int binarySearchTreeHeight = getHeight(binarySearchTree);
 
         // Compare AVL Tree
         AVLTree avlTree = createAVLTree(userArray);
         long avlTreeSearchTime = measureSearchTime(avlTree, userArray);
+        int avlTreeHeight = getHeight(avlTree);
 
+        // Print the heights
+        System.out.println("Height of Binary Tree: " + binaryTreeHeight);
+        System.out.println("Height of Binary Search Tree: " + binarySearchTreeHeight);
+        System.out.println("Height of AVL Tree: " + avlTreeHeight);
+
+        // Print the search times
         System.out.println("Search Time for Binary Tree: " + binaryTreeSearchTime + " nanoseconds");
         System.out.println("Search Time for Binary Search Tree: " + binarySearchTreeSearchTime + " nanoseconds");
         System.out.println("Search Time for AVL Tree: " + avlTreeSearchTime + " nanoseconds");
+
+        // Compare and print the efficiency
+        compareEfficiency(binaryTreeSearchTime, binarySearchTreeSearchTime, avlTreeSearchTime);
     }
 
     // Generate a random array of integers for testing
@@ -265,8 +281,11 @@ public class TreeComparison {
 
     // Create an AVL Tree and insert data
     public static AVLTree createAVLTree(int[] userArray) {
-        // Implement AVL Tree creation (you can use a third-party library or implement it yourself)
-        return null;
+        AVLTree avlTree = new AVLTree();
+        for (int data : userArray) {
+            avlTree.insert(data);
+        }
+        return avlTree;
     }
 
     // Measure the time taken to search all elements in the data set
@@ -281,8 +300,52 @@ public class TreeComparison {
 
     // Measure the time taken to search all elements in the data set
     public static long measureSearchTime(AVLTree tree, int[] userArray) {
-        // Implement AVL Tree search and timing (similar to BinaryTree)
-        return 0; // Replace with actual implementation
+        long startTime = System.nanoTime();
+        for (int data : userArray) {
+            tree.search(data);
+        }
+        long endTime = System.nanoTime();
+        return endTime - startTime;
+    }
+
+    // Print the height of a tree
+    public static int getHeight(BinaryTree tree) {
+        return getHeight(tree.root);
+    }
+
+    public static int getHeight(AVLTree tree) {
+        return getHeight(tree.getRoot());
+    }
+
+    private static int getHeight(TreeNode node) {
+        if (node == null) {
+            return 0;
+        }
+        int leftHeight = getHeight(node.left);
+        int rightHeight = getHeight(node.right);
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    private static int getHeight(AVLNode node) {
+        if (node == null) {
+            return 0;
+        }
+        return node.height;
+    }
+
+    // Compare and print the efficiency
+ // Compare and print the efficiency
+    private static void compareEfficiency(long binaryTreeTime, long binarySearchTreeTime, long avlTreeTime) {
+        System.out.println("Efficiency Comparison:");
+
+        if (binaryTreeTime < binarySearchTreeTime && binaryTreeTime < avlTreeTime) {
+            System.out.println("Binary Tree is the most efficient due to faster search times.");
+        } else if (binarySearchTreeTime < avlTreeTime) {
+            System.out.println("Binary Search Tree is the most efficient due to faster search times.");
+        } else {
+            System.out.println("AVL Tree is the most efficient due to self-balancing properties.");
+        }
     }
 }
+
 
