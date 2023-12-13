@@ -15,8 +15,8 @@ public class ArrayLinkedListComparison {
         // Measure the time for searching in an array list
         long arrayListSearchTime = measureSearchTime(arrayList, userArray);
 
-        System.out.println("Search Time for Linked List: " + linkedListSearchTime + " nanoseconds");
-        System.out.println("Search Time for Array List: " + arrayListSearchTime + " nanoseconds");
+        // Print details and explain efficiency
+        printDetailsAndExplainEfficiency(linkedListSearchTime, arrayListSearchTime);
     }
 
     // Generate a random array of integers for testing
@@ -65,6 +65,27 @@ public class ArrayLinkedListComparison {
         }
         long endTime = System.nanoTime();
         return endTime - startTime;
+    }
+
+    // Print details and explain efficiency
+    private static void printDetailsAndExplainEfficiency(long linkedListSearchTime, long arrayListSearchTime) {
+        System.out.println("Search Time for Linked List: " + linkedListSearchTime + " nanoseconds");
+        System.out.println("Search Time for Array List: " + arrayListSearchTime + " nanoseconds");
+
+        // Explain why the final answer is considered the best
+        explainEfficiency(linkedListSearchTime, arrayListSearchTime);
+    }
+
+    // Explain why the final answer is considered the best
+    private static void explainEfficiency(long linkedListSearchTime, long arrayListSearchTime) {
+        System.out.println("Efficiency Comparison:");
+
+        // Determine the most efficient data structure based on the measured times
+        if (linkedListSearchTime < arrayListSearchTime) {
+            System.out.println("Linked List is more efficient for search operations.");
+        } else {
+            System.out.println("Array List is more efficient for search operations.");
+        }
     }
 }
 
