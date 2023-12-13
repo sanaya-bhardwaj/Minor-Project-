@@ -88,23 +88,42 @@ public class SortComparison {
         long startTime, endTime;
         long bubbleTime, mergeTime, quickTime;
 
+        // Measure Bubble Sort Time
         startTime = System.currentTimeMillis();
         bubbleSort(data.clone());
         endTime = System.currentTimeMillis();
         bubbleTime = endTime - startTime;
+        System.out.println("Bubble Sort Time: " + bubbleTime + " milliseconds");
 
+        // Measure Merge Sort Time
         startTime = System.currentTimeMillis();
         mergeSort(data.clone());
         endTime = System.currentTimeMillis();
         mergeTime = endTime - startTime;
+        System.out.println("Merge Sort Time: " + mergeTime + " milliseconds");
 
+        // Measure Quick Sort Time
         startTime = System.currentTimeMillis();
         quickSort(data.clone());
         endTime = System.currentTimeMillis();
         quickTime = endTime - startTime;
-
-        System.out.println("Bubble Sort Time: " + bubbleTime + " milliseconds");
-        System.out.println("Merge Sort Time: " + mergeTime + " milliseconds");
         System.out.println("Quick Sort Time: " + quickTime + " milliseconds");
+
+        // Explain why the final answer is considered the best
+        explainEfficiency(bubbleTime, mergeTime, quickTime);
+    }
+
+    // Explain why the final answer is considered the best
+    private static void explainEfficiency(long bubbleTime, long mergeTime, long quickTime) {
+        System.out.println("Efficiency Comparison:");
+
+        // Determine the most efficient sorting algorithm based on the measured times
+        if (bubbleTime < mergeTime && bubbleTime < quickTime) {
+            System.out.println("Bubble Sort is the most efficient for this dataset due to faster runtime.");
+        } else if (mergeTime < quickTime) {
+            System.out.println("Merge Sort is the most efficient for this dataset due to faster runtime.");
+        } else {
+            System.out.println("Quick Sort is the most efficient for this dataset due to faster runtime.");
+        }
     }
 }
