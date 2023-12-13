@@ -16,10 +16,8 @@ public class StackQueueComparison {
         long queueEnqueueTime = measureEnqueueTime(userArray);
         long queueDequeueTime = measureDequeueTime(n);
 
-        System.out.println("Stack Push Time: " + stackPushTime + " nanoseconds");
-        System.out.println("Stack Pop Time: " + stackPopTime + " nanoseconds");
-        System.out.println("Queue Enqueue Time: " + queueEnqueueTime + " nanoseconds");
-        System.out.println("Queue Dequeue Time: " + queueDequeueTime + " nanoseconds");
+        // Print details and explanation
+        printDetailsAndExplanation(stackPushTime, stackPopTime, queueEnqueueTime, queueDequeueTime);
     }
 
     // Generate a random array of integers for testing
@@ -82,6 +80,32 @@ public class StackQueueComparison {
         }
         long endTime = System.nanoTime();
         return endTime - startTime;
+    }
+
+    // Print details and explanation
+    private static void printDetailsAndExplanation(long stackPushTime, long stackPopTime, long queueEnqueueTime, long queueDequeueTime) {
+        System.out.println("Time for Stack Operations:");
+        System.out.println("   - Push Time: " + stackPushTime + " nanoseconds");
+        System.out.println("   - Pop Time: " + stackPopTime + " nanoseconds");
+
+        System.out.println("Time for Queue Operations:");
+        System.out.println("   - Enqueue Time: " + queueEnqueueTime + " nanoseconds");
+        System.out.println("   - Dequeue Time: " + queueDequeueTime + " nanoseconds");
+
+        // Explain why the final answer is considered the best
+        explainEfficiency(stackPushTime, stackPopTime, queueEnqueueTime, queueDequeueTime);
+    }
+
+    // Explain why the final answer is considered the best
+    private static void explainEfficiency(long stackPushTime, long stackPopTime, long queueEnqueueTime, long queueDequeueTime) {
+        System.out.println("Efficiency Comparison:");
+
+        // Determine the most efficient data structure based on the measured times
+        if (stackPushTime + stackPopTime < queueEnqueueTime + queueDequeueTime) {
+            System.out.println("Stack is the most efficient due to faster push and pop operations.");
+        } else {
+            System.out.println("Queue is the most efficient due to faster enqueue and dequeue operations.");
+        }
     }
 }
 
