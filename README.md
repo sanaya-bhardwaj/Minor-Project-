@@ -109,3 +109,5 @@ This platform aims to provide a comprehensive and interactive learning experienc
 - Potential use as an educational resource
 
 # Time Complexities of Common Data Structures
+
+Understanding the time complexities of various operations for different data structures is crucial for making informed decisions. Below is a comparison of the time complexities for common operations on different data structures.
