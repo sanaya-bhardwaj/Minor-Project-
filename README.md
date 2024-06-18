@@ -111,3 +111,36 @@ This platform aims to provide a comprehensive and interactive learning experienc
 # Time Complexities of Common Data Structures
 
 Understanding the time complexities of various operations for different data structures is crucial for making informed decisions. Below is a comparison of the time complexities for common operations on different data structures.
+
+
+Comparison of User-Defined Data Sets on Different Data Structures
+Overview
+This project, "Comparison of User-Defined Data Sets on Different Data Structures," provides a platform that enables users to create, manage, and analyze their own data sets using various data structures. The backend is built using Java, while Python libraries are utilized for graphical representation. This project helps users compare different data structures and determine the best one for their specific data set. Additionally, it features a notepad for users to make notes while visualizing and learning.
+
+Features
+User-Friendly Interface: Easy-to-use interface for creating and managing data sets.
+Multiple Data Structure Options: Includes arrays, linked lists, stacks, queues, trees, hash tables, and more.
+Data Manipulation Tools: Tools for adding, deleting, and modifying data within the structures.
+Performance Metrics: Analyze the performance of operations on different data structures, focusing on time complexities.
+Graphical Representation: Visual aids using Python libraries to illustrate data structure operations and behaviors.
+Recommendation System: Suggests the best data structure based on user-defined data sets.
+Notepad Feature: Make notes while visualizing and learning about data structures.
+Target Audience
+Computer science students
+Programmers
+Educators
+Data enthusiasts
+Anticipated Impact
+Improved comprehension of data structures
+Informed decision-making in selecting data structures
+Practical skill development
+Potential use as an educational resource
+Time Complexities of Common Data Structures
+Understanding the time complexities of various operations for different data structures is crucial for making informed decisions. Below is a comparison of the time complexities for common operations on different data structures.
+
+**Arrays**
+
+**- Access:** O(1)
+**- Search:** O(n)
+**Insertion:** O(n) (O(1) if inserting at the end in a dynamic array)
+**Deletion:** O(n)
