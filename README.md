@@ -97,3 +97,15 @@ This platform aims to provide a comprehensive and interactive learning experienc
 - Educators
 
 - Data enthusiasts
+
+# Anticipated Impact 
+
+- Improved comprehension of data structures
+
+- Informed decision-making in selecting data structures
+
+- Practical skill development
+
+- Potential use as an educational resource
+
+# Time Complexities of Common Data Structures
