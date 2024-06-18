@@ -132,3 +132,34 @@ Understanding the time complexities of various operations for different data str
 
 **- Deletion:** O(1) (if deleting the beginning or end)
 
+**Stacks (using arrays or linked lists)**
+
+**Push:** O(1)
+
+**Pop:** O(1)
+
+**Peek:** O(1)
+
+**Queues (using arrays or linked lists)**
+
+**Enqueue:** O(1)
+
+**Dequeue:** O(1)
+
+**Peek:** O(1)
+
+Binary Search Trees (BST)
+Access: O(log n) on average, O(n) in the worst case
+Search: O(log n) on average, O(n) in the worst case
+Insertion: O(log n) on average, O(n) in the worst case
+Deletion: O(log n) on average, O(n) in the worst case
+Hash Tables
+Access: O(1) on average
+Search: O(1) on average
+Insertion: O(1) on average
+Deletion: O(1) on average
+Heaps (Min-Heap/Max-Heap)
+Access: O(1) for min or max
+Search: O(n)
+Insertion: O(log n)
+Deletion: O(log n)
