@@ -194,3 +194,25 @@ View performance metrics and visual aids to compare the efficiency of different 
 
 **Use Notepad:**
 Make notes while visualizing and learning about data structures.
+
+## Project Structure 
+
+```
+
+data-structure-comparison/
+│
+├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
+├── backend/                # Java backend implementation
+│   ├── src/
+│   ├── build.gradle
+│   └── ...
+├── visualization/          # Python visualization scripts
+│   ├── visualize.py
+│   └── ...
+├── datasets/               # Sample data sets
+├── static/                 # Static files (CSS, JS, images)
+├── templates/              # HTML templates
+└── utils/                  # Utility functions and scripts
+
+```
