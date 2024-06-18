@@ -148,18 +148,49 @@ Understanding the time complexities of various operations for different data str
 
 **Peek:** O(1)
 
-Binary Search Trees (BST)
-Access: O(log n) on average, O(n) in the worst case
-Search: O(log n) on average, O(n) in the worst case
-Insertion: O(log n) on average, O(n) in the worst case
-Deletion: O(log n) on average, O(n) in the worst case
-Hash Tables
-Access: O(1) on average
-Search: O(1) on average
-Insertion: O(1) on average
-Deletion: O(1) on average
-Heaps (Min-Heap/Max-Heap)
-Access: O(1) for min or max
-Search: O(n)
-Insertion: O(log n)
-Deletion: O(log n)
+**Binary Search Trees (BST)**
+
+**Access:** O(log n) on average, O(n) in the worst case
+
+**Search:** O(log n) on average, O(n) in the worst case
+
+**Insertion:** O(log n) on average, O(n) in the worst case
+
+**Deletion:** O(log n) on average, O(n) in the worst case
+
+**Hash Tables**
+
+**Access:** O(1) on average
+
+**Search:** O(1) on average
+
+**Insertion:** O(1) on average
+
+**Deletion:** O(1) on average
+
+**Heaps (Min-Heap/Max-Heap)**
+
+**Access:** O(1) for min or max
+
+**Search:** O(n)
+
+**Insertion:** O(log n)
+
+**Deletion:** O(log n)
+
+## Usage
+
+**Create Data Sets:**
+Use the interface to create your own data sets or import existing ones.
+
+**Choose Data Structures:**
+Select from a variety of data structures to apply to your data sets.
+
+**Manipulate Data:**
+Perform operations like insertions, deletions, and searches, and observe their effects.
+
+**Analyze Performance:**
+View performance metrics and visual aids to compare the efficiency of different data structures.
+
+**Use Notepad:**
+Make notes while visualizing and learning about data structures.
