@@ -22,7 +22,7 @@ The field of computer science and software development relies heavily on the eff
 
 This project demonstrates a platform designed to help users compare various data structures and sorting algorithms based on their own data sets, with graphical representations and time complexity analysis. Additionally, it includes a notes section for users to save their insights and important points.
 
-**Platform Flow**
+**-----------Platform Flow-----------**
 
 **1. Login Page**
 
