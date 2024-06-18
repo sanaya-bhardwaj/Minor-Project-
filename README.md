@@ -25,12 +25,14 @@ This project demonstrates a platform designed to help users compare various data
 **Platform Flow**
 
 **1. Login Page**
+
 *Login Form:* Users enter their credentials to access the platform.
 Register Button: If not registered, users can click the Register button, which opens a registration form on a new page.
 
 <img width="953" alt="minor 5" src="https://github.com/sanaya-bhardwaj/Minor-Project-/assets/135012941/bc09f5d4-fec6-4ebd-aa71-a229cd645c62">
 
 **2. Registration Page**
+
 *Registration Form:* Users provide necessary information to create a new account.
 
 <img width="535" alt="minor 4" src="https://github.com/sanaya-bhardwaj/Minor-Project-/assets/135012941/64b563cf-10be-4408-b8bc-38e6fe2ebe17">
