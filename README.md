@@ -68,6 +68,8 @@ Notes can be added, edited, and saved for future reference.
 
 <img width="628" alt="minor 3" src="https://github.com/sanaya-bhardwaj/Minor-Project-/assets/135012941/1bf1861d-2944-4de0-afc8-efa689632afa">
 
-# Conclusion
+# Aim
 
 This platform aims to provide a comprehensive and interactive learning experience for users to understand the practical applications and performance characteristics of different data structures and sorting algorithms. By integrating user-friendly interfaces, graphical representations, and a notes section, the platform bridges the gap between theoretical knowledge and practical application.
+
+
