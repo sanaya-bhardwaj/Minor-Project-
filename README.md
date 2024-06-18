@@ -72,4 +72,20 @@ Notes can be added, edited, and saved for future reference.
 
 This platform aims to provide a comprehensive and interactive learning experience for users to understand the practical applications and performance characteristics of different data structures and sorting algorithms. By integrating user-friendly interfaces, graphical representations, and a notes section, the platform bridges the gap between theoretical knowledge and practical application.
 
+# Features 
+
+**User-Friendly Interface:** Easy-to-use interface for creating and managing data sets.
+
+**Multiple Data Structure Options:** Includes arrays, linked lists, stacks, queues, trees, hash tables, and more.
+
+**Data Manipulation Tools:** Tools for adding, deleting, and modifying data within the structures.
+
+**Performance Metrics:** Analyze the performance of operations on different data structures, focusing on time complexities.
+
+**Graphical Representation:** Visual aids using Python libraries to illustrate data structure operations and behaviors.
+
+**Recommendation System:** Suggests the best data structure based on user-defined data sets.
+
+**Notepad Feature:** Make notes while visualizing and learning about data structures.
+
 
