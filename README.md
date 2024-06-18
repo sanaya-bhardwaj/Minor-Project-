@@ -118,6 +118,17 @@ Understanding the time complexities of various operations for different data str
 
 **- Search:** O(n)
 
-**Insertion:** O(n) (O(1) if inserting at the end in a dynamic array)
+**- Insertion:** O(n) (O(1) if inserting at the end in a dynamic array)
 
-**Deletion:** O(n)
+**- Deletion:** O(n)
+
+**Linked Lists**
+
+**- Access:** O(n)
+
+**- Search:** O(n)
+
+**- Insertion:** O(1) (if inserting at the beginning or end)
+
+**- Deletion:** O(1) (if deleting the beginning or end)
+
