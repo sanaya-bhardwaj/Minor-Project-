@@ -88,4 +88,12 @@ This platform aims to provide a comprehensive and interactive learning experienc
 
 **Notepad Feature:** Make notes while visualizing and learning about data structures.
 
+# Target Audience
 
+- Computer science students
+  
+- Programmers
+
+- Educators
+
+- Data enthusiasts
